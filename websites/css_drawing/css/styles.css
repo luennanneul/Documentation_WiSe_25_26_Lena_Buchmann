@@ -1,0 +1,116 @@
+.fledermaus{
+    position: relative;
+    width: 50vw;
+    height: 50vw;
+    
+}
+
+
+#Kopf {position:relative;
+    width: 50vw;
+    height: 50vw;
+    left: 80%;
+    top:10%;
+    margin-top: 100px;
+}
+
+#Gesicht {
+    background-color: burlywood;
+    border-radius: 50%;
+    width: 20vw;
+    height: 25vw;
+    position: absolute;
+    rotate: 40deg;
+    transform: screw(0, 20deg)
+}
+
+#Nase {
+    background-color: rgb(18, 10, 1); 
+    width: 5vw;
+    height: 5vw;
+    border-radius: 40%;
+    position: absolute;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 55%, 50% 90%, 0% 55%);
+    top: 26%;
+    left: 4%
+}
+
+.Auge{
+    background-color: rgb(18, 10, 1) ;
+    width: 2vw;
+    height: 4vw;
+    border-radius: 60%; 
+    position: absolute;
+    top: 15%;
+    left: 8%
+}
+
+#Auge_rechts{
+    left:18%
+}
+#Nase::after,
+.Auge::after{
+    background-color: white;
+    position: absolute;
+    content: '';
+    width: 1vw;
+    height: 1vw;
+    border-radius: 60%;
+}
+
+.Ohr{
+    background-color: rgb(92, 62, 23);
+    clip-path: polygon(50% 0%, 28% 57%, 70% 57%);
+    width: 15vw;
+    height: 12vw;
+    top: -7%;
+    position: absolute;
+}
+
+#Ohr_links{
+    rotate: -20deg;
+    z-index: -1;
+
+}
+
+#Ohr_rechts{
+    width: 20vw;
+    height: 18vw;
+    left:16%;
+    rotate: 30deg;
+    z-index: -1;
+    top:-10%
+}
+
+#Ohr_rechtsunten{
+    z-index: +2;
+    rotate: 180deg;
+    
+}
+#Mund {
+    color: black;
+    rotate:93deg;
+    position:absolute;
+    top:34%; 
+    left: 06.5%;
+    font-size: 200% ;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+    background-image: url("himmel.jpg");
+}
+
+#Körper{
+    background-color: rgb(193, 153, 102);
+    border-radius: 47%;
+    width: 20vw;
+    height: 40vw;
+    position: absolute;
+    rotate: -25deg;
+    left: 105%;
+    top: 35%;
+    z-index: -1;
+    }
+

@@ -1,0 +1,180 @@
+.image-popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.85);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+.image-popup-content {
+	position: relative;
+	max-width: 90vw;
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.image-popup-content img {
+	max-width: 100%;
+	max-height: 80vh;
+	border-radius: 8px;
+	box-shadow: 0 4px 32px rgba(0,0,0,0.5);
+}
+.image-popup-close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background: #fff;
+	border: none;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	cursor: pointer;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	z-index: 2;
+}
+/* Global canvas and background */
+html,body{height:100%;}
+body{
+	margin:0;
+	background:#000; /* black background */
+	display:flex;
+	justify-content:center;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.canvas{
+	padding:48px 0;
+}
+
+/* The coupon/page */
+.page{
+	width:400px; /* fixed coupon width, stays same on mobile */
+	background:#fff;
+	color:#000;
+	padding:24px 28px;
+	box-shadow:0 0 0 8px rgba(0,0,0,0.6);
+	box-sizing:border-box;
+	font-size:12pt; /* roughly 12 points */
+}
+
+.page-header{ text-align:center; margin-bottom:18px; }
+.brand{ margin:0; font-weight:400; font-size:16pt; letter-spacing:1px; text-transform:none; }
+.title{ margin:0; font-size:12pt; text-transform:uppercase; letter-spacing:2px; }
+
+.personal{ text-align:center; margin:24px 0 18px 0; }
+.personal .name{ font-weight:700; margin:0 0 6px 0; }
+.personal .contact{ margin:0; opacity:0.85; }
+
+.index{ margin:18px 0; }
+.index h3{ margin:0 0 8px 0; font-size:11pt; }
+.index ul{ list-style:none; padding:0; margin:0; }
+.index li{ display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom: none; }
+.index li a{ color:inherit; text-decoration:none; flex:1; text-align:left; }
+.index li span{ width:2em; text-align:right; }
+
+/* "Read more" links inside section text */
+.section .section-text a{ color:#fff; text-decoration:none; font-weight:700; }
+.section .section-text a:hover{ text-decoration:underline; }
+
+.divider{height: 200px ; display:flex; align-items:center; justify-content:center; font-family:monospace; font-size:12pt; color:#000; }
+
+.section {
+	position: relative;
+	margin: 24px 0 0 0;
+	overflow: visible;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+/* Only for main.html: overlay text and add square below image */
+body[data-main="true"] .section {
+	position: relative;
+	height: 700px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+body[data-main="true"] .section img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: grayscale(100%);
+}
+body[data-main="true"] .section .section-text {
+	position: relative;
+	z-index: 2;
+	max-width: 80%;
+	background: rgba(255,255,255,0.8);
+	padding: 18px;
+	text-align: center;
+	color: #000;
+}
+body[data-main="true"] .section .square {
+	position: absolute;
+	bottom: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80px;
+	height: 80px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.section figcaption {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 11pt;
+	color: #333;
+}
+.section img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	filter: grayscale(100%);
+	display: block;
+}
+.section .section-text{ position:relative; z-index:2; max-width:80%; background:rgba(255,255,255,0.8); padding:18px; text-align:center; color:#000; }
+.section .section-text h4{ margin:0 0 10px 0; }
+
+.page-footer{ text-align:center; margin-top:18px; font-size:10pt; opacity:0.8; }
+.blacklink {color: grey; text-decoration: none;}
+.blacklink:hover {text-decoration: underline;}
+
+.fancylink{text-align: center; color: black;}
+.fancy{color: black;text-decoration: none;}
+.fancy:hover{color: purple; text-decoration: underline;}
+
+/* Ensure anchors are visible on focus */
+:target{ outline:2px solid #333; }
+
+/* Keep fixed width on small screens: allow horizontal scroll rather than shrinking */
+@media (max-width:599px){
+	body{ overflow-x:auto; }
+	.canvas{ padding:24px 8px; }
+}
+
+@font-face {
+    font-family: 'flowee';
+    src: url('fonts/Flowee-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flowee {font-family: 'flowee';font-size: 70pt;}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital basics — documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="robots" content="noindex">
+    <script src="image-popup.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <article class="page">
+            <header class="page-header">
+                <h1 class="brand">digitale grundlagen</h1>
+                <h2 class="title">DOKUMENTATION</h2>
+            </header>
+
+            <section class="personal">
+                <p class="name">Lena Buchmann</p>
+                <p class="contact">Gorch-Fock-Str.7 <br> 38104 Braunschweig <br> <br> l.buchmann@hbk-braunschweig.de <br> Matrikelnummer: 80302</p> 
+            </section>
+
+            <h4>1.2 — text systems</h4>
+                    <p>Giving form to something without first reading it seemed reckless. Playfulness does not come naturally to me under certain constraints. Shouldn’t design support its content? Does support equal illustration? Gosh, let me read the content first!</p>
+               
+            <h5>Programm aus dem fernen Mittelalter </h5>
+            <p>The first paragraph was referencing medieval times. Naturally, I wanted to make the page look like parchment, slightly yellowed. In addition I used a font (Lohengrin)that looked like it came from an old book. Within the text I chose to only use Lohengrin for the first letter, to ensure readability. Also, I wanted to further reference medieval styling with the decoration of the initials.</p>
+            <figure class="section">
+                <img src="images/mittelalter.png" alt="mittelaltertext">
+                    <figcaption>Fig.1: styling the text "Programm aus dem fernen Mittelalter".</figcaption>
+            </figure>
+            <h5>Programm als Formenlehre</h5>
+            <p> The second paragraph was about shapes and described a pattern of 3x3 squares, so I tried to recreate what I imagined Fig.5 to look like in the background. This was, before I knew about grids in html so I painfully drew each shape manually. </p>
+
+             <figure class="section">
+                <img src="images/formlehre.png" alt="formlehre">
+                    <figcaption>Fig.2: styling the text "Programm als Formenlehre".</figcaption>
+            </figure>
+
+            <h5>What I found hard about this exercise</h5>
+
+           <p> There were quite some challenges for me within this exercise. <br>
+            Firstly, I find it difficult to imagine a style for a whole structure. It seems too big for my brain to wrap my head around. <br>Secondly, I find it hard to come up with an overall concept, I seem to not know where to start. This I would like to learn in the next semester. I would like to think that I could come up with a modern design for a website, or a funky one or something else. <br>
+            Finally, time was my enemy on this one. I got lost in the details and so I only finished two of the paragraphs, while the others remained blank. 
+           </p>
+            
+           <p class="fancylink"><a class = "fancy" href="websites/text_styling/index.html" target="_blank"> Here you can look at my styled paragraphs.</a></p>
+
+            <footer class="page-footer">
+                <br><a class = "blacklink" href="main.html">Back to main page→</a></p>
+                <p>&copy; 2026</p>
+            </footer>
+        </article>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{
+            a.addEventListener('click',function(e){
+                e.preventDefault();
+                const id = this.getAttribute('href').slice(1);
+                const el = document.getElementById(id);
+                if(el) el.scrollIntoView({behavior:'smooth'});
+            })
+        });
+    </script>
+</body>
+</html>

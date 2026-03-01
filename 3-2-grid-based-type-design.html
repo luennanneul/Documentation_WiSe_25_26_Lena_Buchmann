@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital basics — documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="robots" content="noindex">
+    <script src="image-popup.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <article class="page">
+            <header class="page-header">
+                <h1 class="brand">digitale grundlagen</h1>
+                <h2 class="title">DOKUMENTATION</h2>
+            </header>
+
+            <section class="personal">
+                <p class="name">Lena Buchmann</p>
+                <p class="contact">Gorch-Fock-Str.7 <br> 38104 Braunschweig <br> <br> l.buchmann@hbk-braunschweig.de <br> Matrikelnummer: 80302</p> 
+            </section>
+
+            <h4>3.2 — grid based type design</h4>
+            <p>Everything can be a grid. A guideline to create new shapes. A limit within which new lines can occur. When I was a child, I found children’s drawing stencils stupid because they never accounted for the gap the pencil would create from the edge of the stencil. The shapes would always be too narrow. However, if you use the stencil not for what it was intended for, but for the purpose of a grid, it can become fun.</p>
+            <p>First we tried creating "A"s from some bauhaus stencils and went to see how different they all were.</p>
+             <figure class="section">
+                <img src="images/grid_based_type/a1.jpg" alt="As">
+            <figcaption>Fig.1: As.</figcaption>
+            </figure>
+            <p>Then we tried how we could use a grid as guides to create fonts within the grids limitations. Some letters were easier than others.</p>
+            <figure class="section">
+                <img src="images/grid_based_type/crocked2.jpg" alt="crocked">
+            <figcaption>Fig.2: A crocked, leaning font.</figcaption>
+            </figure>
+            
+            <p>Then we tried what else could be used as a stencil to make fonts. I tried... a stencil.</p>
+             <figure class="section">
+                <img src="images/grid_based_type/stencil.jpg" alt="mermaid">
+            <figcaption>Fig.3: Fishes made from the flower stencil.</figcaption>
+            </figure>
+            <p>Eventually I made a font. I struggled to find something I liked very much. But now I do. Let me present to you, my font: </p>
+            <p class="flowee"> Flowee</p>
+            <figure class="section">
+                <img src="images/grid_based_type/letters2.jpg" alt="sketches of flowee">
+            <figcaption>Fig.4: Sketches for flowee.</figcaption>
+            </figure>
+
+              <figure class="section">
+                <img src="images/grid_based_type/quick_brown_fox.png" alt="quick_brown_fox">
+            <figcaption>Fig.5: Example of the font.</figcaption>
+            </figure>
+
+
+            <footer class="page-footer">
+                <br><a class = "blacklink" href="main.html">Back to main page→</a></p>
+                <p>&copy; 2026</p>
+            </footer>
+        </article>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{
+            a.addEventListener('click',function(e){
+                e.preventDefault();
+                const id = this.getAttribute('href').slice(1);
+                const el = document.getElementById(id);
+                if(el) el.scrollIntoView({behavior:'smooth'});
+            })
+        });
+    </script>
+</body>
+</html>

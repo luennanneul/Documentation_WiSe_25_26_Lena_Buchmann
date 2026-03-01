@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital basics — documentation</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="robots" content="noindex">
+    <script src="image-popup.js"></script>
+</head>
+<body>
+    <div class="canvas">
+        <article class="page">
+            <header class="page-header">
+                <h1 class="brand">digitale grundlagen</h1>
+                <h2 class="title">DOKUMENTATION</h2>
+            </header>
+
+            <section class="personal">
+                <p class="name">Lena Buchmann</p>
+                <p class="contact">Gorch-Fock-Str.7 <br> 38104 Braunschweig <br> <br> l.buchmann@hbk-braunschweig.de <br> Matrikelnummer: 80302</p> 
+            </section>
+
+            <h4>2.1 — morphological box</h4>
+            <p>The morphological box is a technique used to come up with fun and creative combinations of things or variations of the same thing. <br>
+                        You choose three parameters and three variables for each of the parameters. Then you combine them randomly.</p>
+                    <p>Being sick when we initially tried this exercise did not stop me from trying it out on my own. I chose the parameters: upper body [human, snail, frog], lower body [octopus, shark, eel] and number of eyes [1,2,9]. Then I used dice to choose my fate. <br> I was a little disappointed that I only got to draw one eye once, and on one occasion time I switched around upper and lower body animal because I was getting a little bored of the same features. My favourite animals are probably the snail-headed creatures. I found this exercise to be mainly fun (for example for character creation) but I do wonder, in which other areas this method could be applied to generate creative ideas.
+</p>
+          
+
+            <section class="section">
+                <img src="images/morphological box/creatures.jpg" alt="creatures">
+                <figcaption>Fig.1: creatures</figcaption>
+            </section>
+
+            <section class="section">
+                <img src="images/morphological box/more_creatures.jpg" alt="more creatures">
+                <figcaption>Fig.2: more creatures</figcaption>
+            </section>
+
+
+
+            <footer class="page-footer">
+                <br><a class = "blacklink" href="main.html">Back to main page→</a></p>
+                <p>&copy; 2026</p>
+            </footer>
+        </article>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{
+            a.addEventListener('click',function(e){
+                e.preventDefault();
+                const id = this.getAttribute('href').slice(1);
+                const el = document.getElementById(id);
+                if(el) el.scrollIntoView({behavior:'smooth'});
+            })
+        });
+    </script>
+</body>
+</html>

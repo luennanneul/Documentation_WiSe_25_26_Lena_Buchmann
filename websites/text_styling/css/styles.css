@@ -1,0 +1,125 @@
+/* GENERAL STYLING */
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 700px 
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.paragraph {
+  font-size: 1rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+footer {
+  font-size: 0.8rem;
+}
+
+/* ADDITIONAL CLASSES */
+.intro {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.small {
+  font-size: 0.75rem;
+  margin-left: 20%;
+}
+
+.large {
+  font-size: 2rem;
+  letter-spacing: -0.03rem;
+  line-height: 0.9;
+}
+
+.two_col {
+  column-count: 2;
+  column-gap: 0.3rem;
+}
+
+.four_col {
+  column-count: 4;
+  column-gap: 0.7rem;
+}
+
+section {
+  margin-left: 15px;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* x-offset, y-offset, blur, Farbe */
+  margin-bottom: 1.5em
+}
+
+h2 {
+  margin-left: -15px;
+
+}
+
+#überschrift {
+  background-color: whitesmoke;
+  text-align: center;
+}
+
+#section1 {
+  background-color: rgb(227, 199, 172);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* x-offset, y-offset, blur, Farbe */
+  background-image: linear-gradient(to right bottom, rgb(238, 189, 159),rgb(145, 96, 61));
+}
+
+#section1 .header {
+  font-family: 'Lohengrin', serif;
+}
+
+#section1 div::first-letter {
+  font-size: x-large;
+  color: darkred;
+  font-weight: bold;
+  font-family: 'Lohengrin', serif;
+}
+
+.square {
+  width:6em;
+  height: 6em;
+  background-color: lightpink;
+  position: absolute;
+  z-index: -1;
+  border: 1px solid white;
+}
+
+.little {
+  width: 2em;
+  height: 2em;
+  border-width: 2px;
+  
+}
+
+
+#squares {
+  position: relative;
+  width: fit-content;      /* passt die Breite an den Inhalt an */
+  margin: 5em;          /* zentriert den gesamten Block horizontal */
+}
+
+#section2 {
+position: relative;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Lohengrin';
+  src: url('fonts/Lohengrin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
